@@ -1,0 +1,13 @@
+<section
+  id="cardContent"
+  class="card"
+  [ngClass]="{
+    'card--face-up': isFaceUp,
+    'card--highlighted': isNewlyDealt
+  }"
+>
+  <ng-container *ngIf="isFaceUp">
+    <h3 class="card__label">{{ label }}</h3>
+    <p class="card__icon" [innerHTML]="icon"></p>
+  </ng-container>
+</section>

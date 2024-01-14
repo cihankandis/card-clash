@@ -1,0 +1,35 @@
+.card {
+  width: 80px;
+  height: 120px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--face-up {
+    background-color: #fff;
+    color: #000;
+  }
+
+  &:not(.card--face-up) {
+    background-color: #888;
+  }
+
+  &--highlighted {
+    background-color: yellow;
+    border: 2px solid orange;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__icon {
+    font-size: 24px;
+  }
+}

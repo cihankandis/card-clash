@@ -1,0 +1,22 @@
+<aside class="player">
+  <header class="player__info">
+    <h2 class="player__name">{{ playerId }}</h2>
+    <div class="player__score-container">
+      <span class="player__score__label">Score:</span>
+      <span class="player__score_value">{{ score }}</span>
+    </div>
+  </header>
+  <section class="player__cards">
+    <app-card
+      *ngFor="let card of cards; let i = index"
+      [label]="card.label"
+      [icon]="card.icon"
+      [isFaceUp]="true"
+      [isNewlyDealt]="card.isNewlyDealt"
+    ></app-card>
+    <app-card
+      *ngFor="let _ of emptyCardSlots; let i = index"
+      [isFaceUp]="false"
+    ></app-card>
+  </section>
+</aside>

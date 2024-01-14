@@ -1,0 +1,31 @@
+.game-controls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #46a041;
+  }
+}
+
+.active-section,
+.game-over-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  .subtitle {
+    margin: 0;
+  }
+}

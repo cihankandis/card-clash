@@ -1,0 +1,9 @@
+<section class="players-grid">
+  <app-player
+    *ngFor="let player of players$ | async"
+    [playerId]="player.id"
+    [score]="player.score"
+    [cards]="player.cards"
+    [maxCardSlots]="gameStateService.getMaxCardSlots()"
+  ></app-player>
+</section>
