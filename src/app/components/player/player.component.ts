@@ -24,13 +24,6 @@ export class PlayerComponent {
 
   emptyCardSlots: number[] = [];
 
-  addCard(card: Card): void {
-    if (this.cards.length < this.maxCardSlots) {
-      this.cards = [...this.cards, card];
-      this.updateCardSlots();
-    }
-  }
-
   private updateCardSlots(): void {
     this.emptyCardSlots = Array(this.maxCardSlots - this.cards.length).fill(0);
   }

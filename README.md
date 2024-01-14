@@ -15,6 +15,14 @@ Card Clash is a card game where players compete over multiple rounds. Each round
 - **Round Progression**: Click "Deal Next Round" to deal an additional card each round until all rounds are complete.
 - **Restarting the Game**: Post final round, "Restart Game" appears. Clicking it shuffles new cards and restarts the game.
 
+## Development Highlights
+
+**Semantic HTML**
+I have used semantic HTML to ensure that the structure of the web page is meaningful and to enhance the accessibility.
+
+**Comprehensive Testing**
+All components and services are tested covering a wide range of cases, to ensure reliability and stability.
+
 ## Components
 
 - **CardComponent:**

@@ -21,38 +21,6 @@ describe('PlayerComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should add a card to the player', () => {
-    const card: Card = {
-      label: 'my card',
-      value: 5,
-      icon: 'my-icon',
-      isNewlyDealt: true,
-    };
-
-    component.cards = [];
-
-    component.addCard(card);
-
-    expect(component.cards.length).toBe(1);
-    expect(component.cards[0]).toEqual(card);
-  });
-
-  it('should not add a card if maxCardSlots is reached', () => {
-    const card: Card = {
-      label: 'may card',
-      value: 5,
-      icon: 'my icon',
-      isNewlyDealt: true,
-    };
-
-    component.maxCardSlots = 2;
-    component.cards = [card, card];
-
-    component.addCard(card);
-
-    expect(component.cards.length).toBe(2);
-  });
-
   it('should update emptyCardSlots when cards change', () => {
     const card1: Card = {
       label: 'my card1',
