@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
+import { GameConfig } from '../../models/config.model';
+import { GameState } from 'src/app/enums/game-state.enum';
 import { ConfigService } from '../config.service';
 import { CardService } from '../card-service';
 import { PlayerService } from '../player.service';
 import { GameStateService } from './game-state.service';
-import { GameConfig } from '../../models/config.model';
-import { GameState } from 'src/app/enums/game-state.enum';
 
 /**
  * GameInitializationService

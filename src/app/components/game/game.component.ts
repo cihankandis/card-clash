@@ -1,8 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Player } from 'src/app/models';
-import { GameStateService } from 'src/app/services/game/game-state.service';
-import { PlayerService } from 'src/app/services/player.service';
+import { GameStateService, PlayerService } from 'src/app/services';
 
 /**
  * Game Component

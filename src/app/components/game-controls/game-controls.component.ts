@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { GameState } from 'src/app/enums/game-state.enum';
-import { GameStateService } from 'src/app/services/game/game-state.service';
-import { GameManagerService } from 'src/app/services/game/game-manager.service';
+import { GameManagerService, GameStateService } from 'src/app/services';
 
 /**
  * GameControlsComponent
