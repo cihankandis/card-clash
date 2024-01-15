@@ -6,6 +6,7 @@
     'card--highlighted': isNewlyDealt
   }"
 >
+  <!-- Display card label and icon if face up -->
   <ng-container *ngIf="isFaceUp">
     <h3 class="card__label">{{ label }}</h3>
     <p class="card__icon" [innerHTML]="icon"></p>

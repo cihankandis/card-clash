@@ -1,12 +1,17 @@
 <div *ngIf="gameState$ | async as gameState" class="game-controls-container">
+  <!-- Game Title -->
   <h1>Card Clash</h1>
+
+  <!-- Start New Game Button: Shown when game not started -->
   <ng-container *ngIf="gameState === GameState.NotStarted; else gameSection">
     <button id="startNewGameButton" class="button" (click)="startNewGame()">
       Start New Game
     </button>
   </ng-container>
 
+  <!-- Game Section: Active game controls and game-over message -->
   <ng-template #gameSection>
+    <!-- Active Game Controls: Shown when game is in progress -->
     <section *ngIf="gameState === GameState.Active" class="active-section">
       <h3 class="subtitle">
         Current Round: {{ gameStateService.currentRound$ | async }}
@@ -16,6 +21,7 @@
       </button>
     </section>
 
+    <!-- Game Over Section: Shown when game is over -->
     <section *ngIf="gameState === GameState.GameOver" class="game-over-section">
       <h3 class="subtitle">Game Over!</h3>
       <button id="restartGameButton" class="button" (click)="restartGame()">

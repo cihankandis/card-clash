@@ -4,6 +4,11 @@ import { Player } from 'src/app/models';
 import { GameStateService } from 'src/app/services/game/game-state.service';
 import { PlayerService } from 'src/app/services/player.service';
 
+/**
+ * Game Component
+ * This component is responsible for rendering the game interface. It displays the
+ * player hands
+ */
 @Component({
   selector: 'app-game',
   templateUrl: './game.component.html',

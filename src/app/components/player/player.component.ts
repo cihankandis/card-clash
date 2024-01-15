@@ -1,6 +1,10 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Card } from '../../models';
 
+/**
+ * PlayerComponent
+ * Displays a player in the game, displaying their ID, score, and the cards.
+ */
 @Component({
   selector: 'app-player',
   templateUrl: './player.component.html',

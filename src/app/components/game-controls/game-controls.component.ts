@@ -3,6 +3,11 @@ import { GameState } from 'src/app/enums/game-state.enum';
 import { GameStateService } from 'src/app/services/game/game-state.service';
 import { GameManagerService } from 'src/app/services/game/game-manager.service';
 
+/**
+ * GameControlsComponent
+ * This component manages the game state such as starting a new game,
+ * dealing the next round, and restarting the game after it's over.
+ */
 @Component({
   selector: 'app-game-controls',
   templateUrl: './game-controls.component.html',

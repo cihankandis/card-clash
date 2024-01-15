@@ -1,4 +1,5 @@
 <section class="players-grid">
+  <!-- Renders player components -->
   <app-player
     *ngFor="let player of players$ | async"
     [playerId]="player.id"

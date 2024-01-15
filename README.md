@@ -23,6 +23,20 @@ I have used semantic HTML to ensure that the structure of the web page is meanin
 **Comprehensive Testing**
 All components and services are tested covering a wide range of cases, to ensure reliability and stability.
 
+**Styling**
+I used BEM naming convention for better readability and maintainability.
+
+**Change Detection Strategy**
+I used ChangeDetectionStrategy.OnPush for better performance.
+
+## Future Enhancements
+
+there's always room for improvement. Here are some of them:
+
+- Accessibility
+- Internationalization
+- Customizable Themes (using scss variables would make it easier to update styles.)
+
 ## Components
 
 - **CardComponent:**
