@@ -36,6 +36,7 @@ there's always room for improvement. Here are some of them:
 - Accessibility
 - Internationalization
 - Customizable Themes (using scss variables would make it easier to update styles.)
+- Handling unexptected cases (when no cards left but still empty slots)
 
 ## Components
 
