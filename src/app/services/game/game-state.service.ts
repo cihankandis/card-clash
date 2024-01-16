@@ -9,13 +9,6 @@ import { GameState } from 'src/app/enums/game-state.enum';
  * It provides observables to allow other parts of the application to react to
  * changes in these states.
  *
- * Properties:
- * - currentRound$: Observable<number> - An observable that emits the current round number.
- * - gameState$: Observable<GameState> - An observable that emits the current state of the game.
- *
- * Methods:
- * - setMaxCardSlots(slots: number): Sets the maximum number of card slots.
- * - getMaxCardSlots(): Returns the current maximum number of card slots.
  */
 @Injectable({
   providedIn: 'root',
