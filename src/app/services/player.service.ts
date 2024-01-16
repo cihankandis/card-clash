@@ -55,12 +55,8 @@ export class PlayerService {
 
   // calculates the score for the plater
   private getPlayerScore(cards: Card[]): number {
-    let score = 0;
-
-    cards.forEach((card) => {
-      score += card.value;
-    });
-
-    return score;
+    return cards.reduce((acc, card) => {
+      return acc + card.value;
+    }, 0);
   }
 }
